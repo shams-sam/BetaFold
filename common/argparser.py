@@ -3,11 +3,13 @@ import argparse
 def get_args():
     parser = argparse.ArgumentParser(
             formatter_class=argparse.RawTextHelpFormatter)
+    parser.add_argument('-t', type=str, required=False, dest='type')
     parser.add_argument('-w', type=str, required=False, dest='file_weights')
     parser.add_argument('-n', type=int, required=False, dest='dev_size')
     parser.add_argument('-c', type=int, required=False, dest='training_window')
     parser.add_argument('-e', type=int, required=False, dest='training_epochs')
     parser.add_argument('-b', type=int, required=False, dest='batch_size')
+    parser.add_argument('-i', type=int, required=False, dest='inv_loss')
     parser.add_argument('-l', type=float, required=False, dest='lr')
     parser.add_argument('-o', type=str, required=False, dest='dir_out')
     parser.add_argument('-d', type=int, required=False, dest='arch_depth')

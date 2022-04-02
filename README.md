@@ -13,4 +13,3 @@ tar zxvf train-data.tar.gz
 
 - [1] "A fully open-source framework for deep learning protein real-valued distances", Scientific Reports DOI: [https://www.nature.com/articles/s41598-020-70181-0](https://www.nature.com/articles/s41598-020-70181-0)
 - [2] PDNET github repository: https://github.com/ba-lab/pdnet
-- 

@@ -141,7 +141,7 @@ def get_input_output_bins(pdb_id_list, all_feat_paths, all_dist_paths,
             assert ry + OUTL <= l
             XX[i, :, :, :] = Xpadded[rx:rx+OUTL, ry:ry+OUTL, :]
             YY[i, :, :, :] = Ypadded[rx:rx+OUTL, ry:ry+OUTL, :]
-    return XX.astype(np.float32), YY.astype(np.float32)
+    return XX.astype(np.float32)[0], YY.astype(np.float32)[0]
 
 def get_sequence(pdb, feature_file):
     features = pickle.load(open(feature_file, 'rb'))
