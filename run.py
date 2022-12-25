@@ -254,8 +254,6 @@ print('valid: ', mae/len(train_loader))
 
 
 plot_protein_yy(y1s, y2s, plt_out)
-plot_protein_scatter(y1s, y2s, plt_out)
-
 
 print('')
 print ('Everything done! ' + str(datetime.datetime.now()) )
